@@ -6,9 +6,9 @@ public class PowersOfNumbersWhile {
 
         int m, k;
         int total = 1;
-        System.out.println("enter a number: ");
+        System.out.println("enter a sub: ");
         m = scan.nextInt();
-        System.out.println("enter a power: ");
+        System.out.println("enter a sup: ");
         k = scan.nextInt();
 
         int i = 1;

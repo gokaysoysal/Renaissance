@@ -8,7 +8,7 @@ public class Atm {
         String userName, password;
         int turn = 3;
         int select;
-        int balance = 1500;
+        int balance = 15000;
 
         while (turn > 0) {
             System.out.print("Enter your Username : ");

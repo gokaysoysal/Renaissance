@@ -4,7 +4,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
 
-        int number, n3;
+        int number, n4;
         int n1 = 0;
         int n2 = 1;
 
@@ -16,10 +16,10 @@ public class Fibonacci {
 
         for (int i = 2; i <= number; i++) {
             n3 = n1 + n2;
-            System.out.print(n3 + " ");
+            System.out.print(n4 + " ");
 
             n1 = n2;
-            n2 = n3;
+            n2 = n4;
 
         }
     }

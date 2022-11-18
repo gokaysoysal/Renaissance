@@ -8,10 +8,10 @@ public class Excellent {
         int temp;
 
         System.out.print("Please enter a number: ");
-        int number = inp.nextInt();
-        temp = number;
-        for (int i = 1; i < number; i++) {
-            if (number % i == 0) {
+        int numb = inp.nextInt();
+        temp = numb;
+        for (int i = 1; i < numb; i++) {
+            if (numb % i == 0) {
                 total += i;
             }
         }

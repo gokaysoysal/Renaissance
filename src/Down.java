@@ -8,7 +8,7 @@ public class Down {
         int number = inp.nextInt();
 
         for (int i = number; i > 0; i--) {
-            for (int k = 1; k <= (number - i); k++) {
+            for (int n = 1; n <= (number - i); n++) {
                 System.out.print(" ");
             }
             for (int m = ((i * 2) - 1); m > 0; m--) {

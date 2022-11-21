@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class Calculator {
     static int sum (int a, int b){
         int result = a + b;
-        System.out.print("Sum: " +result);
+        System.out.println("Sum: " +result);
         return result;
     }
     static int minus(int a,int b){
         int result = a-b;
-        System.out.print("Minus: " + result);
+        System.out.println("Minus: " + result);
         return  result;
     }
     static int times(int a, int b){
         int result = a*b;
-        System.out.print("Times: " + result);
+        System.out.println("Times: " + result);
         return result;
     }
     static int divided(int a, int b){
         int result = a/b;
-        System.out.print("Divided: " + result);
+        System.out.println("Divided: " + result);
         return result;
     }
     static int power(int a, int b){
@@ -26,16 +26,16 @@ public class Calculator {
         for (int i =1; i<=b;i++){
             result *=a;
         }
-        System.out.print("Power: "+ result);
+        System.out.println("Power: "+ result);
         return result;
     }
     static int mod (int a,int b){
         int result = a%b;
-        System.out.print("Mod: "+ result);
+        System.out.println("Mod: "+ result);
         return result;
     }
     static void rectangle(int a, int b){
-        System.out.print("Area: "+ (2*(a+b)) +"\nPerimeter: " + (a*b));
+        System.out.println("Area: "+ (2*(a+b)) +"\nPerimeter: " + (a*b));
     }
 
 
@@ -43,7 +43,7 @@ public class Calculator {
 
         Scanner inp = new Scanner(System.in);
 
-        String menu = "\n"+"=========================\n"
+        String menu = "\n"
                 + "1- Sum\n"
                 + "2- Minus\n"
                 + "3- Times\n"
@@ -53,8 +53,10 @@ public class Calculator {
                 + "7- Rectangle area and perimeter\n"
                 + "0- Quit\n";
 
+
+        System.out.println(menu);
         while (true) {
-            System.out.println(menu);
+            System.out.println("=========================");
             System.out.print("Choose action: ");
             int select = inp.nextInt();
 

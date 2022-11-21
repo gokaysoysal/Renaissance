@@ -16,11 +16,11 @@ public class RecPow {
 
         while (true) {
             System.out.print("Please enter base number: ");
-            int a = inp.nextInt();
+            int base = inp.nextInt();
             System.out.print("Please enter exp number: ");
-            int b = inp.nextInt();
+            int exp = inp.nextInt();
 
-            power(a, b);
+            power(base, exp);
         }
     }
 

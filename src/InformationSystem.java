@@ -1,7 +1,7 @@
 public class InformationSystem {
     public static void main(String[] args) {
         Teacher t1 = new Teacher("Mahmut Hoca", "TRH", "555");
-        Teacher t2 = new Teacher("Kulyutmaz", "BIO", "444");
+        Teacher t2 = new Teacher("Kul Yutmaz", "BIO", "444");
         Teacher t3 = new Teacher("Badi Ekrem", "BDN", "333");
 
         Course tarih = new Course("Tarih", "101", "TRH");

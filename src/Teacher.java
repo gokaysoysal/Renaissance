@@ -11,7 +11,7 @@ public class Teacher {
 
     void print() {
         System.out.println("Teacher name:\t" + this.name);
-        System.out.println("Branch:\t" + this.branch);
+        System.out.println("Branch:\t\t" + this.branch);
         System.out.println("Mobile Phone:\t" + this.mpno);
     }
 }

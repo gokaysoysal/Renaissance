@@ -8,7 +8,7 @@ public class InformationSystem {
         tarih.addTeacher(t1);
         Course biology = new Course("Biyoloji", "102", "BIO");
         biology.addTeacher(t2);
-        Course beden = new Course("Beden", "101", "BDN");
+        Course beden = new Course("Beden", "103", "BDN");
         beden.addTeacher(t3);
 
         Student s1 = new Student("Guduk Necmi", "123", "4", tarih, biology, beden);

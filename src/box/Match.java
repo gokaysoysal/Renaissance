@@ -16,8 +16,11 @@ public class Match {
     void run() {
         if (isCheck()) {
             while (this.f1.health > 0 && this.f2.health > 0) {
+                System.out.println("=== === === NEW ROUND === === ===");
                 this.f2.health = this.f1.hit(f2);
+                System.out.println(this.f1.name + " Health: " + this.f1.health);
                 this.f1.health = this.f2.hit(f1);
+                System.out.println(this.f2.name + " Health: " + this.f2.health);
             }
         }else {
             System.out.println("The weight of selected fighters doesn't match!");

@@ -17,10 +17,10 @@ public class Match {
         if (isCheck()) {
             while (this.f1.health > 0 && this.f2.health > 0) {
                 this.f2.health = this.f1.hit(f2);
-
+                this.f1.health = this.f2.hit(f1);
             }
         }else {
-            System.out.println("The weight of selected fighters weight doesn't match!");
+            System.out.println("The weight of selected fighters doesn't match!");
         }
     }
 

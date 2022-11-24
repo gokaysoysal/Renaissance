@@ -15,14 +15,16 @@ public class Match {
 
     void run() {
         if (isCheck()) {
+            System.out.println(this.f1.name + " Health: " + this.f1.health + "  ----------  " + this.f2.name + " Health: " + this.f2.health);
             while (this.f1.health > 0 && this.f2.health > 0) {
                 System.out.println("=== === === NEW ROUND === === ===");
                 this.f2.health = this.f1.hit(f2);
-                System.out.println(this.f1.name + " Health: " + this.f1.health);
-                this.f1.health = this.f2.hit(f1);
                 System.out.println(this.f2.name + " Health: " + this.f2.health);
+
+                this.f1.health = this.f2.hit(f1);
+                System.out.println(this.f1.name + " Health: " + this.f1.health);
             }
-        }else {
+        } else {
             System.out.println("The weight of selected fighters doesn't match!");
         }
     }
@@ -31,4 +33,16 @@ public class Match {
         return (this.f1.weight >= minWeight && this.f1.weight <= maxWeight) && (this.f2.weight >= minWeight && this.f2.weight <= maxWeight);
     }
 
+    boolean isWin() {
+        if (this.f1.health == 0) {
+            System.out.println(this.f2.name + " is Win!");
+            return true;
+        }
+        if (this.f2.health == 0) {
+            System.out.println(this.f1.name + " is Win!");
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

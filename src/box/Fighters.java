@@ -15,7 +15,7 @@ public class Fighters {
     }
 
     int hit(Fighters foe) {
-        System.out.println(this.name + " ==>" + foe.name + " " + this.damage + " damage");
+        System.out.println(this.name + "  ===>  " + foe.name + "  " + this.damage + " damage");
         if (foe.health - this.damage <= 0) {
             return 0;
         }

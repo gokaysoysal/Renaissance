@@ -13,6 +13,8 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println("==============================");
+
         for (int[] row:numbers){
             for (int col: row){
                 System.out.print(col + "  ");

@@ -19,7 +19,7 @@ public class Main {
                 dup[i] = count;
             }
         }
-        System.out.println("Array : " + Arrays.toString(list));
+        System.out.println("Array: " + Arrays.toString(list));
         for (int i = 0; i < list.length; i++) {
             if (dup[i] != 0) {
                 System.out.println("Number " + list[i] + " is repeated " + dup[i] + " times");

@@ -9,7 +9,7 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
         int turn = 0;
-        int[] wrong = new int[5];
+        int[] wrong = new int[3];
         boolean isWin = false;
 
         while (turn < 5) {

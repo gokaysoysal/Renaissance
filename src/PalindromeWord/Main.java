@@ -1,4 +1,4 @@
-package PalindromeWord;
+    package PalindromeWord;
 
 import java.util.Scanner;
 

@@ -1,9 +1,11 @@
 package PalindromeNumb;
+
 import java.util.Scanner;
+
 public class Main {
-    static boolean isPalindrome(String str){
+    static boolean isPalindrome(String str) {
         String reverse = "";
-        for (int i = str.length()-1; i >=0;i--){
+        for (int i = str.length() - 1; i >= 0; i--) {
             reverse += str.charAt(i);
         }
         return str.equals(reverse);

@@ -1,4 +1,5 @@
 package MineSweeper;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -47,6 +48,7 @@ public class MineSweeper {
             }
         }
     }
+
     // SATIR KONTROL
     public int rowControl(int rowCont, Scanner scan) {
         while ((rowCont >= this.rowNumb) || (rowCont < 0)) {

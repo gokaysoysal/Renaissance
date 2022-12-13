@@ -1,6 +1,4 @@
 package MineSweeper;
-
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,10 +17,9 @@ public class MineSweeper {
         this.size = rowNumb * colNumb;
         this.map = new int[rowNumb][colNumb];
         this.board = new int[rowNumb][colNumb];
-
     }
 
-    //oyun başlatma
+    //OYUN BAŞLATMA
     public void run() {
         int row, col;
         int finish = 0;
@@ -49,10 +46,8 @@ public class MineSweeper {
                 System.out.println("Game Over!");
             }
         }
-
     }
-
-    // satır kontrol
+    // SATIR KONTROL
     public int rowControl(int rowCont, Scanner scan) {
         while ((rowCont >= this.rowNumb) || (rowCont < 0)) {
             System.out.println("Please enter 0-" + this.rowNumb + ":\t");
@@ -61,8 +56,7 @@ public class MineSweeper {
         return rowCont;
     }
 
-    // sutün kontrol
-
+    // SÜTUN KONTROL
     public int colControl(int colCont, Scanner scan) {
         while ((colCont >= this.colNumb) || (colCont < 0)) {
             System.out.print("Plese enter 0-" + this.colNumb + ":\t");
@@ -71,7 +65,7 @@ public class MineSweeper {
         return colCont;
     }
 
-    // mayın kontrol
+    // MAYIN KONTROL
     public void check(int row, int col) {
         if (map[row][col] == 0) {
             if ((col < colNumb - 1) && (map[row][col + 1] == -1)) {
@@ -89,12 +83,10 @@ public class MineSweeper {
             if (board[row][col] == 0) {
                 board[row][col] = 5;
             }
-
         }
-
     }
 
-    //mayın yerleştirme
+    //MAYIN DAĞITIM
     public void prepareGame() {
         int randRow, randCol, count = 0;
         while (count <= (size / 4)) {
@@ -107,7 +99,7 @@ public class MineSweeper {
         }
     }
 
-    //map görünüm
+    //MAP GÖRÜNÜM
     public void print(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {

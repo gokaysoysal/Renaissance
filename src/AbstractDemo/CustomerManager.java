@@ -3,7 +3,7 @@ package AbstractDemo;
 public class CustomerManager {
     BaseDatabaseManager baseDatabaseManager;
 
-    public void getCustomers(){
+    public void getCustomers() {
         baseDatabaseManager.getData();
     }
 }

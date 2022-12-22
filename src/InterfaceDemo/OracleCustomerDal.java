@@ -1,6 +1,6 @@
 package InterfaceDemo;
 
-public class OracleCustomerDal implements ICustomerDal{
+public class OracleCustomerDal implements ICustomerDal {
     @Override
     public void add() {
         System.out.println("Oracle Eklendi");

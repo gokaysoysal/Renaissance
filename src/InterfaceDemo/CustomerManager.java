@@ -1,15 +1,15 @@
 package InterfaceDemo;
 
 
-
 public class CustomerManager {
     private ICustomerDal customerDal;
 
-    public CustomerManager(ICustomerDal customerDal){
+    public CustomerManager(ICustomerDal customerDal) {
         this.customerDal = customerDal;
 
     }
-    public void add(){
+
+    public void add() {
         customerDal.add();
     }
 }

@@ -15,8 +15,8 @@ public class Main {
 
         System.out.println("==============================");
 
-        for (int[] row:numbers){
-            for (int col: row){
+        for (int[] row : numbers) {
+            for (int col : row) {
                 System.out.print(col + "  ");
             }
             System.out.println();
